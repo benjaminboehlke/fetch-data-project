@@ -1,44 +1,11 @@
-/* let btn = document.getElementById('submit');
-let list = document.getElementById('list');
-let inputfield = document.querySelector('#prompt'); 
-btn.disabled = true;
+import './style.css'
 
-btn.addEventListener('click', addMessage, false);
-inputfield.addEventListener('keypress', validate, false);
-
-
-
-function validate() {
-    let input = document.getElementById('prompt').value;
-    let btn = document.getElementById('submit');
-    if(input.length <= -1 ) {
-        btn.disabled = true;
-    }
-    else {
-        btn.disabled = false;
-    }
-  
-
-}
-
-function addMessage() {
-
-    let listItem = document.createElement('li');
-
-
-    let input = document.getElementById('prompt').value;
-    console.log(input);
-    list.appendChild(listItem).innerHTML = input;
-    document.querySelector('#prompt').value = "";
-    btn.disabled = true;
-}
- */
 
 let list = document.getElementById('list');
 let btn = document.getElementById('submit');
 let btnHide = document.getElementById('hide');
 let dataHidden = true;
-btnHide.disabled = true;
+//btnHide.disabled = true;
 let db = [];
 
 btn.addEventListener('click', getData, false);
@@ -74,7 +41,7 @@ function showData(data) {
     
     }
 
-    btnHide.disabled = false;
+    //btnHide.disabled = false;
 
 }
 
@@ -84,3 +51,6 @@ function getData() {
       .then(json => showData(json))
 
 };
+
+
+
