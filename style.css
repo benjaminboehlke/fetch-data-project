@@ -24,10 +24,11 @@ html {
 
 .card {
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(60, 60, 60);
     padding: 1rem;
     list-style: none;
     margin-bottom: 0.5rem;
+    color: white;
 
 }
 
