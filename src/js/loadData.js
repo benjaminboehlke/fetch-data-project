@@ -21,8 +21,6 @@ export function getData() {
 
         for (let i = 0; i <= data.length; i++) {
 
-            console.log(data[i].title);
-    
                 let card = document.createElement("div");
                 card.className = "card";
                 card.innerHTML = `<h3>${data[i].copy}</h3><p>${data[i].title}</p>`

@@ -6,7 +6,6 @@ export function sendData() {
     
     btn.addEventListener('click', function(event){
         event.preventDefault();
-        console.log(copy.value, title.value);
         postData(title.value, copy.value);
         copy.value = "";
         title.value = "";
