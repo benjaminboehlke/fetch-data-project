@@ -1,0 +1,18 @@
+@import "./_variables.scss";
+
+
+header {
+    width: 100%;
+    position: fixed;
+    padding: 1rem;
+    background-color: $color-red-500;
+    margin-top: 0px;
+    top: 0px;
+  
+  }
+
+  .branding {
+    color: $color-white;
+    font-size: 1rem;
+    font-weight: bold;
+  }

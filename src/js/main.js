@@ -6,10 +6,16 @@ const app = document.querySelector('#app');
 
 
 app.innerHTML = `
-<form>
+<header>
+<div class="branding">Pizzaservice</div>
+</header>
+<form class="form">
+<h2>Add a Pizza</h2>
+<label for="title">Title</label>
 <input id="title" type="text"></input>
-<input id="copy" type="text" ></input>
-<input id="btn" type="submit" value="Submit">
+<label for="copy">Copy</label>
+<input id="copy" type="text"></input>
+<input id="btn" type="submit" value="Submit" disabled>
 </form>
         <div id="container">
         </div>

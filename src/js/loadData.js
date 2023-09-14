@@ -19,11 +19,11 @@ export function getData() {
             //portrait.style.backgroundImage = "url(" + data[i].imageurl + ")";
         } */
 
-        for (let i = 0; i <= data.length; i++) {
-
+        for (let i = 0; i < data.length; i++) {
+                console.log(data[i].copy);
                 let card = document.createElement("div");
                 card.className = "card";
-                card.innerHTML = `<h3>${data[i].copy}</h3><p>${data[i].title}</p>`
+                card.innerHTML = `<h3>${data[i].title}</h3><p>${data[i].copy}</p>`
                 container.insertBefore(card, container.firstChild);
         
                 
