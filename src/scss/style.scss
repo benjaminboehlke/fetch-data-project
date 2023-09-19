@@ -74,16 +74,19 @@ p {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: $color-red-600;
+  color: $color-white;
   cursor: pointer;
   transition: border-color 0.25s;
+  bottom: 1rem;
+  position: absolute;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: $color-red-500;
 }
 button:focus,
 button:focus-visible {
@@ -129,5 +132,11 @@ display: block;
   text-align: left;
   color: $color-black;
   border-radius: 1rem;
+  min-height: 160px;
+  position: relative;
+  }
+
+  .btn-danger {
+    background-color: $color-red-600;
   }
 

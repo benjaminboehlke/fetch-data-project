@@ -20,7 +20,10 @@ app.innerHTML = `
         <div id="container">
         </div>
         `
+    
 sendData();
 getData();
+
+
 
 

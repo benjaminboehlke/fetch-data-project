@@ -4,6 +4,9 @@ export function sendData() {
     let copy = document.getElementById('copy');
     let title = document.getElementById('title');
 
+
+
+
     copy.addEventListener('keyup', checkInput);
     title.addEventListener('keyup', checkInput);
     
@@ -40,15 +43,9 @@ function postData(title, copy) {
             body: JSON.stringify(data)
         };
     
-        fetch('https://eu-central-1.aws.data.mongodb-api.com/app/first-mongo-app-hawmy/endpoint/members', options)
+        fetch('https://eu-central-1.aws.data.mongodb-api.com/app/first-mongo-app-hawmy/endpoint/addPizza', options)
         .then(res => location.reload());
     
         }
-
-
-
-
-
-
-
     }
+
